@@ -1,0 +1,55 @@
+# C++ / Windows Car Game – .gitignore
+
+# ── Compiled Output ────────────────────────────────────
+*.exe
+*.o
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.dll
+*.d
+
+# ── Game Data (personal stats — not for committing) ────
+data.txt
+
+# ── CMake Build Artifacts ──────────────────────────────
+build/
+out/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# ── Visual Studio ──────────────────────────────────────
+.vs/
+*.user
+*.suo
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+x64/
+x86/
+Debug/
+Release/
+
+# ── MinGW / GCC ────────────────────────────────────────
+*.a
+*.s
+*.map
+
+# ── OS Meta Files ──────────────────────────────────────
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ── Editor / IDE ───────────────────────────────────────
+.vscode/
+.idea/
+*.bak
+*.tmp
+*~

@@ -97,36 +97,20 @@ cmake --build build
 
 ```
 carGame/
-├── .github/
-│   └── workflows/
-│       └── build.yml    # Auto-build & release CI
-├── CarGame.cpp          # Main game source (all-in-one)
-├── CMakeLists.txt       # CMake build definition
-├── build.bat            # One-click build & launch (MinGW)
-├── .gitignore           # Git ignore rules
-├── LICENSE              # MIT License
-└── README.md            # Project documentation
+├── CarGame.cpp      # Main game source (all-in-one)
+├── CMakeLists.txt   # CMake build definition
+├── build.bat        # One-click build & launch (MinGW)
+├── .gitignore       # Git ignore rules
+├── LICENSE          # MIT License
+└── README.md        # Project documentation
 ```
 
 ---
 
-## 🤖 GitHub Actions – Auto Release
+## 📦 Downloads
 
-Every time you push a **version tag**, GitHub automatically compiles `CarGame.exe` and attaches it to a release so anyone can download and run it — no compiler needed.
-
-### How to publish a release
-
-```bash
-git tag v1.0
-git push origin v1.0
-```
-
-That's it! GitHub Actions will:
-1. Compile `CarGame.exe` using MinGW on Windows
-2. Create a **GitHub Release** named `Car Game v1.0`
-3. Attach the ready-to-run `CarGame.exe` to the release
-
-> You can also trigger a build manually from the **Actions** tab on GitHub without creating a tag.
+Pre-compiled Windows builds are available on the [**Releases**](../../releases) page.  
+Download `CarGame.exe` and double-click to play — no compiler or installation needed.
 
 ---
 
